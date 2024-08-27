@@ -34,10 +34,13 @@
 
     <script>
         // The value below is injected by flutter build, do not touch.
-        const serviceWorkerVersion = "210539153";
+        const serviceWorkerVersion = "3289782434";
     </script>
     <!-- This script adds the flutter initialization JS code -->
-    <script src="flutter.js" defer></script>
+    <!--        <script src="flutter.js" defer></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/@ericblade/quagga2/dist/quagga.min.js"></script>
+
+    <script src="js/barcode.js"></script>
 
 </head>
 <body>
@@ -59,5 +62,7 @@ _flutter.loader.loadEntrypoint({
         loadMainDartJs();
       }
 </script>
+<script src="main.dart.js" type="application/javascript"></script>
+
 </body>
 </html>
